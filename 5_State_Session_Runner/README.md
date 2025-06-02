@@ -42,7 +42,7 @@ Internal Thoughts/Reasoning (for LLMAgent): Often, LLM-based agents will have in
 
 Why it's important:
 
-  #t :white_check_mark: Debugging: Essential for understanding why an agent behaved a certain way. You can trace the entire execution flow.
+  \t :white_check_mark: Debugging: Essential for understanding why an agent behaved a certain way. You can trace the entire execution flow.
   :white_check_mark: Monitoring: Provides insights into agent performance and common execution paths.
   :white_check_mark: Evaluation: Crucial for evaluating agent quality, as you can see the step-by-step reasoning and tool usage.
   :white_check_mark: Auditing: Provides a transparent record of interactions.
