@@ -5,14 +5,20 @@ In the Google ADK, the Runner is essentially the execution engine for your agent
 What it does:
 
 :white_check_mark: Receives Input: It takes the initial input (e.g., a user's message, an API call, an event).
+
 :white_check_mark: Invokes the Agent: It passes this input to your defined agent (e.g., an LLMAgent, SequentialAgent, etc.).
+
 :white_check_mark: Manages Execution Flow: It handles the steps the agent takes, including:
 Calling the underlying LLM (for LLMAgent).
 Invoking tools the agent decides to use.
 Managing the flow between sub-agents in a multi-agent system.
+
 :white_check_mark: Produces Output: It collects the agent's response or the outcome of its actions.
+
 :white_check_mark: Manages Sessions: Crucially, the Runner is often tied to a session manager that maintains the State of the conversation across multiple turns.
+
 :white_check_mark: Event Generation: As the agent executes, the Runner generates Session Events that log what's happening.
+
 :white_check_mark: Analogy: If your agent is a skilled chef, the Runner is the kitchen manager who takes the customer's order, tells the chef what to cook, provides ingredients (tools), makes sure everything goes in the right order, and ultimately presents the meal to the customer.
 
 2. Session Event
