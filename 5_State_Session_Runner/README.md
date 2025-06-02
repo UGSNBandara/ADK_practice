@@ -28,12 +28,18 @@ A Session Event is a record of something significant that happens during an agen
 What it captures:
 
 :white_check_mark: Input Received: When a new message or input comes into the session.
+
 :white_check_mark: Agent Decision: What the agent decided to do next (e.g., "called tool 'GoogleSearch'", "responded with text").
+
 :white_check_mark: Tool Call: When a tool is invoked, including its input parameters.
+
 :white_check_mark: Tool Result: The output or result received from a tool.
+
 :white_check_mark: Agent Response: The final text or artifact produced by the agent.
 Internal Thoughts/Reasoning (for LLMAgent): Often, LLM-based agents will have internal "thoughts" or reasoning steps before making a decision. These can also be logged as events.
+
 :white_check_mark: Errors: Any issues or errors encountered during execution.
+
 Why it's important:
 
   Debugging: Essential for understanding why an agent behaved a certain way. You can trace the entire execution flow.
@@ -50,15 +56,21 @@ State refers to the current context and memory of a specific conversation or int
 What it typically includes:
 
 :white_check_mark: Conversation History: The sequence of previous messages exchanged between the user and the agent. This is the most fundamental part of session state.
+
 :white_check_mark: Internal Agent Memory: Any specific facts or variables the agent decided to store for the duration of the conversation.
+
 :white_check_mark: Tool Call Results (sometimes): The results of previous tool calls that might be relevant for future turns.
+
 :white_check_mark: User Information: If available, data about the specific user interacting with the agent.
 
 Why it's important:
 
 :white_check_mark: Continuity: Allows the agent to remember what was discussed previously, making the conversation feel natural and allowing for follow-up questions. Without state, every interaction would be like starting a brand new conversation.
+
 :white_check_mark: Example: User asks "What's the weather in London?" (Agent knows London). User then asks "And in Paris?" (Agent remembers the context is "weather" and applies it to Paris).
+
 :white_check_mark: Coherence: Ensures that the agent's responses are relevant to the ongoing dialogue.
+
 :white_check_mark: Personalization: Enables agents to tailor responses based on past interactions or known user preferences within that session.
 
 How it's managed:
