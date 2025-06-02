@@ -42,12 +42,11 @@ Internal Thoughts/Reasoning (for LLMAgent): Often, LLM-based agents will have in
 
 Why it's important:
 
-  Debugging: Essential for understanding why an agent behaved a certain way. You can trace the entire execution flow.
-  Monitoring: Provides insights into agent performance and common execution paths.
-  Evaluation: Crucial for evaluating agent quality, as you can see the step-by-step reasoning and tool usage.
-  Auditing: Provides a transparent record of interactions.
-  Analogy: Continuing the chef analogy, a Session Event is like the kitchen logbook that records every order taken, every ingredient     
-           fetched, every cooking step, every dish served, and any unexpected issues.
+  #t :white_check_mark: Debugging: Essential for understanding why an agent behaved a certain way. You can trace the entire execution flow.
+  :white_check_mark: Monitoring: Provides insights into agent performance and common execution paths.
+  :white_check_mark: Evaluation: Crucial for evaluating agent quality, as you can see the step-by-step reasoning and tool usage.
+  :white_check_mark: Auditing: Provides a transparent record of interactions.
+  :white_check_mark: Analogy: Continuing the chef analogy, a Session Event is like the kitchen logbook that records every order taken, every ingredient fetched, every cooking step, every dish served, and any unexpected issues.
 
 3. State
    
